@@ -1,0 +1,38 @@
+#container {
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 15px;
+    border: 2px solid black;
+    display: flex;/*row*/
+    flex-direction: column;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    align-content: flex-start;
+    /* align-content: space-evenly; */
+    align-content: baseline;
+    flex-wrap: wrap;
+}
+
+#org {
+    align-content: flex-start;
+    flex-basis: 50px;
+}
+
+#blue {
+    flex-basis: 400px; 
+    /* If the flex-direction is set to column this will work 
+    on the cross axis bcs of column is set and if it is set to 
+    row then the changes is made in the x-axis*/
+}
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 80px;
+    width: 300px; /* No matter how much how much height or width is given if it exceeds the total box size then it adjust on its own to display all items in given row or column */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

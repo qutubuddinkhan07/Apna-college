@@ -1,0 +1,29 @@
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px solid;
+    border: 2px solid black;
+    display: flex;/*row*/
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* The direction can be set to the row-reversed or column-reversed or column or row */
+    /* When the direction is set to row-reversed then the main axis becomes the horizontal line and verical line becomes cross axis but the line starts from right-to-left */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 80px; /* No matter how much how much height or width is given if it exceeds the total box size then it adjust on its own to display all items in given row or column */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

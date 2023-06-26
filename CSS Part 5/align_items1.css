@@ -1,0 +1,45 @@
+#container {
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;/*row*/
+    /* flex-direction: column; */
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* Align items is same as the justify content just the align-items 
+    impliments on the cross axis and the justify-content applies on the 
+    x-axis */
+    /* align-items: baseline; */
+    /* By using the baseline the text comes into the same line */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: space-evenly; */
+    /* align-content: baseline; */
+}
+/* --------------------------------------------------------------- */
+/* Align self has always more priority than align-items */
+#org {
+    /* align-self: flex-end; */
+    /* For this the wrap property should not be defined before */
+    align-self: center;
+    /* align-content: baseline; */
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px; /* No matter how much how much height or width is given if it exceeds the total box size then it adjust on its own to display all items in given row or column */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
